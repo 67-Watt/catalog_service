@@ -105,9 +105,9 @@ INVENTORY_SERVICE_URL=http://inventory_service
 
 To start the service, run:
 
-    ```bash
-    go run main.go
-    ```
+```bash
+go run main.go
+  ```
 The server will start on the specified port (default: `8080`).
 
 ## Development
@@ -116,9 +116,9 @@ The server will start on the specified port (default: `8080`).
 
 To run the tests for the Catalog Service, use:
 
-    ```bash
-    go test ./...
-    ```
+```bash
+  go test ./...
+  ```
 This will run all unit tests and integration tests for the service.
 
 ## Deployment
