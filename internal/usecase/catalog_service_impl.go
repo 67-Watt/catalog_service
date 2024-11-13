@@ -1,10 +1,10 @@
 package usecase
 
 import (
+	"catalog_service/internal/adapter/persistence"
 	"catalog_service/internal/domain/payload/params"
 	"catalog_service/internal/domain/payload/request"
 	response2 "catalog_service/internal/domain/payload/response"
-	"catalog_service/internal/domain/repository"
 	"context"
 	"errors"
 	"github.com/google/uuid"
@@ -13,11 +13,11 @@ import (
 
 // categoryService is the implementation of CategoryService
 type categoryService struct {
-	repo repository.CategoryRepository
+	repo persistence.CategoryRepository
 }
 
 // NewCategoryService creates a new instance of categoryService
-func NewCategoryService(repo repository.CategoryRepository) CategoryService {
+func NewCategoryService(repo persistence.CategoryRepository) CategoryService {
 	return &categoryService{repo: repo}
 }
 
